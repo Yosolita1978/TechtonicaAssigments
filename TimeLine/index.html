@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techtonica Application Time Line</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1 class="Main-title">Techtonica 2024H1 Cohort Application Time Line</h1>
+    <h3 class="hints">&#128165 Click on the <mark>&#x2609 dots</mark> to see more information &#128165</h3>
+    <div class="timeline-wrapper">
+        <ul class="timeline">
+            <li data-date="August 18, 2023">
+               <span class="title">Open Applications</span>
+               <div class="data">
+                <h3>Open our Application Forms</h3>
+                <small>August 18, 2023</small>
+                <p>Look for the links to the forms in our website</p>
+                <span class="close">Click to Close</span>
+               </div> 
+            </li>
+            <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+             <li data-date="August 18, 2023">
+                <span class="title">Open Applications</span>
+                <div class="data">
+                 <h3>Open our Application Forms</h3>
+                 <small>August 18, 2023</small>
+                 <p>Look for the links to the forms in our website</p>
+                 <span class="close">Click to Close</span>
+                </div> 
+             </li>
+        </ul>
+
+    </div>
+    <script>
+        const timeWrapper = document.querySelector('.timeline-wrapper')
+        const timelines = document.querySelectorAll('.timeline li .data');
+        for(const time of timelines){
+            time.onclick = () => time.classList.toggle('show');
+        }
+        timeWrapper.addEventListener('mouseover', (event) =>{
+            const timeline = document.querySelector('.timeline');
+            let scrollWidth = event.pageX / timeWrapper.clientWidth * (timeWrapper.clientWidth - timeline.clientWidth);
+            timeline.style.left = scrollWidth.toFixed(1) + 'px';
+
+        })
+    </script>
+</body>
+</html>
