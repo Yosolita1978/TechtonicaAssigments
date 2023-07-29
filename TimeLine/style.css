@@ -82,6 +82,7 @@ mark {
 }
 
 .timeline li:hover::before{
+    height: 1.5rem;
     background-color: #e5313e;
 
 }
@@ -108,14 +109,16 @@ mark {
 }
 
 .timeline li:nth-child(even) >.title{
-    top: 2.4rem;
+    top: 1.4rem;
 } 
 
 .timeline li:nth-child(odd) >.title{
-    top: -2.4rem;
+    top: -1.4rem;
 } 
 
 .timeline li:hover .title {
+    display: block;
+    margin-top: 1.5rem;
     opacity: 1;
 }
 
@@ -136,9 +139,10 @@ mark {
 
 .timeline li:hover .data{
     background-color: #00556e;
-    --scale: 1.2;
+    --scale: 1;
     cursor: pointer;
     z-index: 200;
+
 }
 
 .data.show{
@@ -146,13 +150,15 @@ mark {
     height: 22rem;
     border-radius: 1rem;
     padding: 1rem;
-    background-image: linear-gradient(45deg, #00556e, #0091B8);
+    background-image: linear-gradient(45deg, #0091B8, #379db8);
     box-shadow: 0 .1rem .4rem #0004;
     z-index: 100;
 }
 
-.data h3{
+.data h3,
+.data small{
     text-transform: capitalize;
+    margin-left: 0.7rem;
 }
 
 .data p{
@@ -170,9 +176,11 @@ mark {
     align-self: flex-start ;
     background-color: #fc5d23;
     padding: .5rem .8rem;
-
     border-radius: 2rem;
     font-size: 1rem;
+}
 
-
+.data a{
+    color: #fff;
+    margin-left: 0.7rem;
 }
